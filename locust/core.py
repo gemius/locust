@@ -3,7 +3,7 @@ from gevent import monkey, GreenletExit
 import six
 from six.moves import xrange
 
-monkey.patch_all(thread=False)
+monkey.patch_all(thread=False, select=False)
 
 from time import time
 import sys
